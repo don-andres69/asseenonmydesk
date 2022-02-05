@@ -100,45 +100,39 @@ body {
 ANDRES' CSS PRACTICE **************************************************************************
 **************************************************************************
 */
-.container {
+
+.sidecard {
   position: relative;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-color: var(--bs-gray-700);
+  border-radius: 0.25rem;
 }
 
-/* Bottom left text */
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
+.largecard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  width: 450px;
+  max-height: 550px;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.125);
+  border-color: var(--bs-gray-700);
+  overflow: auto;
 }
 
-/* Top left text */
-.top-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}
-
-/* Top right text */
-.top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-}
-
-/* Bottom right text */
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-}
-
-/* Centered text */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.botd {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 /* END ANDRES' CSS PRACTICE**************************************************************************
@@ -4846,7 +4840,8 @@ fieldset:disabled .btn {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 5px solid rgba(0, 0, 0, 0.125);
+  border-color: var(--bs-gray-700);
   border-radius: 0.25rem;
 }
 .card > hr {

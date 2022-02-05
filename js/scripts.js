@@ -15,4 +15,13 @@ var monthid = month
 var url = picid + ".jpg"
 var content = `<img src = "../Images/Villagers/${monthid}/${url}" width="115" height="200"></img>`
 
-document.getElementById('BOTD').innerHTML = content 
+
+
+var random_color = Math.floor(Math.random()*16777215).toString(16);
+var colorchoice = `Villager Birthday of the day`
+
+document.getElementById('BOTD').innerHTML = content
+document.getElementById('BOTD-header').style.backgroundColor = "#" + random_color
+document.getElementById('CS-header').style.backgroundColor = "#" + random_color
+document.getElementById('TV-header').style.backgroundColor = "#" + random_color
+document.getElementById('BOTD-header').innerHTML = colorchoice
