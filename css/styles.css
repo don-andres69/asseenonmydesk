@@ -101,6 +101,10 @@ ANDRES' CSS PRACTICE ***********************************************************
 **************************************************************************
 */
 
+.sideheader {
+  position: relative;
+}
+
 .sidecard {
   position: relative;
   display: flex;
@@ -112,6 +116,10 @@ ANDRES' CSS PRACTICE ***********************************************************
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-color: var(--bs-gray-700);
   border-radius: 0.25rem;
+  margin-top: 100x;
+  margin-bottom: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .largecard {
@@ -119,14 +127,16 @@ ANDRES' CSS PRACTICE ***********************************************************
   display: flex;
   flex-direction: column;
   min-width: 0;
-  width: 450px;
+  width: 380px;
   max-height: 550px;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: rgb(10, 10, 10);
   background-clip: border-box;
   border: 2px solid rgba(0, 0, 0, 0.125);
   border-color: var(--bs-gray-700);
   overflow: auto;
+  margin-top: 10px;
+  padding-top: 10px;
 }
 
 .botd {
@@ -4837,12 +4847,14 @@ fieldset:disabled .btn {
   display: flex;
   flex-direction: column;
   min-width: 0;
+  max-height: 400px;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
   border: 5px solid rgba(0, 0, 0, 0.125);
   border-color: var(--bs-gray-700);
   border-radius: 0.25rem;
+  overflow: auto;
 }
 .card > hr {
   margin-right: 0;
