@@ -103,6 +103,13 @@ ANDRES' CSS PRACTICE ***********************************************************
 
 .sideheader {
   position: relative;
+  margin: 5px;
+  max-width: 400px;
+}
+
+.cardpicture {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
 }
 
 .sidecard {
@@ -127,7 +134,7 @@ ANDRES' CSS PRACTICE ***********************************************************
   display: flex;
   flex-direction: column;
   min-width: 0;
-  width: 380px;
+  max-width: 400px;
   max-height: 550px;
   word-wrap: break-word;
   background-color: rgb(10, 10, 10);
@@ -4847,9 +4854,9 @@ fieldset:disabled .btn {
   display: flex;
   flex-direction: column;
   min-width: 0;
-  max-height: 400px;
+  max-height: 350px;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: rgb(249, 252, 252);
   background-clip: border-box;
   border: 5px solid rgba(0, 0, 0, 0.125);
   border-color: var(--bs-gray-700);
@@ -4945,7 +4952,8 @@ fieldset:disabled .btn {
 .card-img,
 .card-img-top,
 .card-img-bottom {
-  width: 100%;
+  width: 55%;
+  height: 55%;
 }
 
 .card-img,
