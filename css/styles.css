@@ -101,6 +101,12 @@ ANDRES' CSS PRACTICE ***********************************************************
 **************************************************************************
 */
 
+.scrollheader {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
 .sideheader {
   position: relative;
   margin: 5px;
@@ -118,9 +124,9 @@ ANDRES' CSS PRACTICE ***********************************************************
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 0 solid rgba(0, 0, 0, 0.125);
   border-color: var(--bs-gray-700);
   border-radius: 0.25rem;
   margin-top: 100x;
@@ -129,21 +135,64 @@ ANDRES' CSS PRACTICE ***********************************************************
   margin-right: 5px;
 }
 
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown:hover .dropdowncontent {
+  display: block;
+}
+
+.dropdowncontent {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown .dropdownbutton {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  color: grey;
+}
+
 .largecard {
   position: relative;
   display: flex;
   flex-direction: column;
   min-width: 0;
   max-width: 400px;
-  max-height: 550px;
+  max-height: 600px;
   word-wrap: break-word;
   background-color: rgb(10, 10, 10);
   background-clip: border-box;
-  border: 2px solid rgba(0, 0, 0, 0.125);
+  border: 5px solid rgba(0, 0, 0, 0.125);
   border-color: var(--bs-gray-700);
   overflow: auto;
   margin-top: 10px;
+  margin-left: 2px;
   padding-top: 10px;
+}
+
+.sidecardholder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  max-height: 600px;
+  max-width: 400px;
+  word-wrap: break-word;
+  background-color: rgb(249, 252, 252);
+  background-clip: border-box;
+  border: 5px solid rgba(0, 0, 0, 0.125);
+  border-color: var(--bs-gray-700);
+  border-radius: 0.25rem;
+  overflow: auto;
 }
 
 .botd {
@@ -4858,7 +4907,7 @@ fieldset:disabled .btn {
   word-wrap: break-word;
   background-color: rgb(249, 252, 252);
   background-clip: border-box;
-  border: 5px solid rgba(0, 0, 0, 0.125);
+  border: 2px solid rgba(0, 0, 0, 0.125);
   border-color: var(--bs-gray-700);
   border-radius: 0.25rem;
   overflow: auto;
@@ -4960,6 +5009,14 @@ fieldset:disabled .btn {
 .card-img-top {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
+  margin-top: 10px;
+}
+
+.card-img-topless {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  width: 55%;
+  height: 55%;
 }
 
 .card-img,
