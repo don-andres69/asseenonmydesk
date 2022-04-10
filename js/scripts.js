@@ -1,19 +1,14 @@
-/*!
-* Start Bootstrap - Blog Home v5.0.7 (https://startbootstrap.com/template/blog-home)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-blog-home/blob/master/LICENSE)
+/*
+* Villager of the Day Script
 */
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
-
 
 var theDate = new Date();
 var month = theDate.getMonth() + 1; 
 var day = theDate.getDate();
 var picid = day;
 var monthid = month
-var url = picid + ".jpg"
-var content = `<img src = "../Images/Villagers/${monthid}/${url}" width="115" height="200"></img>`
+var url = picid + ".png"
+var content = `<img src = "../Images/Villagers/${monthid}/${url}" width="150px" height="260px" style="background-color: transparent";></img>`
 
 
 
@@ -25,3 +20,16 @@ document.getElementById('BOTD-header').style.backgroundColor = "#" + random_colo
 document.getElementById('CS-header').style.backgroundColor = "#" + random_color
 document.getElementById('TV-header').style.backgroundColor = "#" + random_color
 document.getElementById('BOTD-header').innerHTML = colorchoice
+
+/*
+* Dropdown script
+*/
+
+function myFunction() {
+    var x = document.getElementById("navbar");
+    if (x.className === "header") {
+      x.className += " responsive";
+    } else {
+      x.className = "header";
+    }
+  }

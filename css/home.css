@@ -1,0 +1,96 @@
+/* HOMEPAGE **************************************************************************************************************
+*
+*
+*
+Colors: 
+#38023B Dark Purple
+#A288E3 Lavendar Floral
+#BBD5ED Light bLUE
+#CEFDFF Light Cyan
+#CCFFCB Tea Green */
+
+/* IMPORTS
+************************************************************************************************************************* */
+@font-face {
+  font-family: 'finkheavymedium';
+  src: url("../fonts/FinkHeavy\ Medium.otf")
+}
+
+/* GLOBAL
+************************************************************************************************************************** */
+
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 50%;
+  width: 100%;
+  font-family: finkheavymedium;
+  font-size: 20px;
+  margin: 0;
+}
+
+
+h1 {
+  margin: 0;
+}
+
+
+
+
+/* MENU SIDE
+************************************************************************************************************************** */
+.left {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #cefdff;
+  margin: 0;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.box {
+  display: inline-block;
+}
+
+.menu {
+  list-style: none;
+  text-align: center;
+  padding: 10px;
+  line-height: 150%;
+}
+
+/* VILLAGER BIRTHDAY SIDE
+************************************************************************************************************************* */
+
+
+.right {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #a288e3;
+  margin: 0;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+/* RESPONSIVE 
+************************************************************************************************************************** */
+
+@media screen and (min-width: 800px) {
+  body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    font-family: finkheavymedium;
+    font-size: 40px;
+    margin: 0;
+  }
+}
