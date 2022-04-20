@@ -110,8 +110,9 @@ button a {
 }
 
 .item img {
-    max-width: 300px;
+    width: 300px;
     height: auto; 
+    object-fit: contain;
 }
 
 .item button {
@@ -218,10 +219,6 @@ button a {
         text-align: right;
     }
 
-    /*.menubox.responsive {
-        display: inline-block;
-    }*/
-
 }
 
 @media screen and (max-width: 300px) {
@@ -232,4 +229,6 @@ button a {
         margin-left: 10px;
         font-size: 20px;
     }
+
+    
 }

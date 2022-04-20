@@ -8,7 +8,7 @@ var day = theDate.getDate();
 var picid = day;
 var monthid = month
 var url = picid + ".png"
-var content = `<img src = "../Images/Villagers/${monthid}/${url}" width="150px" height="260px" style="background-color: transparent";></img>`
+var content = `<img src = "../Images/Villagers/${monthid}/${url}" width="200px" height="260px" style="background-color: transparent; object-fit: contain"></img>`
 
 
 
